@@ -1,0 +1,218 @@
+@import '../../../styles/variables.scss';
+
+.light {
+    background-color: $bg-color-light;
+    color: $border-color-light;
+    display: flex;
+    justify-content: center;
+}
+
+.dark {
+    background-color: $bg-color-darker;
+    color: $border-color-dark;
+    display: flex;
+    justify-content: center;
+}
+
+.dark h2 {
+    color: $text-color-dark;
+}
+
+h2 {
+    margin-bottom: 60px;
+}
+
+img {
+    width: 8vw;
+    margin-top: 30px;
+}
+
+input {
+    margin-bottom: 30px;
+}
+
+.light .custom-container {
+    width: 30vw;
+    border: 2px solid $border-color-light;
+    border-radius: 14px;
+    padding: 60px;
+    text-align: center;
+    margin: 20vh 0;
+}
+
+.dark .custom-container {
+    width: 30vw;
+    border: 2px solid $border-color-dark;
+    border-radius: 14px;
+    padding: 60px;
+    text-align: center;
+    margin: 20vh 0;
+    background-color: $bg-color-dark;
+}
+
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.light .custom-container a {
+    color: $border-color-light;
+}
+
+.dark .custom-container a {
+    color: $border-color-dark;
+}
+
+.light .custom-container input {
+    background-color: $bg-color-light;
+    border-color: $border-color-light;
+    color: $text-color-light;
+
+    &:focus {
+        box-shadow: 0 0 2px 2px $border-color-light;   
+    }
+}
+
+.dark .custom-container input {
+    background-color: $bg-color-secondary;
+    border-color: $border-color-dark;
+    color: $text-color-dark;
+
+    &:focus {
+        box-shadow: 0 0 2px 2px $border-color-dark;   
+    }
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.btn-secondary {
+    width: 100%;
+}
+
+.light .custom-container .btn-primary {
+    background-color: $border-color-light;
+    border-color: $border-color-light;
+
+    &:hover {
+        background-color: $button-hover-color-light;
+        border-color: $button-hover-color-light;
+        color: $border-color-light;
+    }
+}
+
+.dark .custom-container .btn-primary {
+    background-color: $border-color-dark;
+    border-color: $border-color-dark;
+
+    &:hover {
+        background-color: $button-hover-color-dark;
+        border-color: $button-hover-color-dark;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .light .custom-container {
+        width: 50vw;
+    }
+
+    .dark .custom-container {
+        width: 50vw;
+    }
+
+    img {
+        width: 12vw;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .light .custom-container {
+        width: 60vw;
+    }
+
+    .dark .custom-container {
+        width: 60vw;
+    }
+
+    img {
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .light .custom-container {
+        width: 70vw;
+    }
+
+    .dark .custom-container {
+        width: 70vw;
+    }
+
+    img {
+        width: 18vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .light .custom-container {
+        width: 70vw;
+    }
+
+    .dark .custom-container {
+        width: 70vw;
+    }
+
+    img {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .light .custom-container {
+        width: 85vw;
+    }
+
+    .dark .custom-container {
+        width: 85vw;
+    }
+
+    img {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .light .custom-container {
+        width: 95vw;
+    }
+
+    .dark .custom-container {
+        width: 95vw;
+    }
+
+    img {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .button-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    img {
+        width: 30vw;
+    }
+}

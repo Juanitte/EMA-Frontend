@@ -1,0 +1,19 @@
+{
+    "LOGIN": {
+        "TITLE": "Inicio de sesión",
+        "EMAIL": "Email",
+        "PASSWORD": "Contraseña",
+        "LOG_IN": "Iniciar sesión",
+        "SIGN_UP": "Registrarse",
+        "FORGOT_PASSWORD": "Olvidé mi contraseña"
+    },
+    
+    "NAVBAR": {
+        "HOME": "Inicio",
+        "COMPANY": "Empresa",
+        "PROFILE": "Perfil",
+        "LIGHT_MODE": "Claro",
+        "DARK_MODE": "Oscuro",
+        "LOGOUT": "Cerrar Sesión"
+    }
+}

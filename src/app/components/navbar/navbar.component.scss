@@ -1,0 +1,66 @@
+@import '../../../styles/variables.scss';
+
+.light .navbar {
+    background-color: $bg-color-light;
+    border-bottom: $border-color-light solid 2px;
+}
+
+.dark .navbar {
+    background-color: $bg-color-dark;
+    border-bottom: $border-color-dark solid 2px;
+}
+
+.light .nav-link {
+    color: $text-color-light;
+    font-weight: bold;
+    margin-right: 10px;
+    border: 1px solid $border-color-light;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.dark .nav-link {
+    color: $text-color-dark;
+    font-weight: bold;
+    margin-right: 10px;
+    border: 1px solid $border-color-dark;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.light .nav-link:hover {
+    background-color: $button-hover-color-light;
+    cursor: pointer;
+}
+
+.dark .nav-link:hover {
+    background-color: $button-hover-color-dark;
+    cursor: pointer;
+}
+
+.navbar-brand img {
+    width: 80px;
+    margin-left: 15px;
+}
+
+.button-text {
+    display: inline;
+}
+
+@media screen and (max-width: 991px) {
+    .light .nav-link {
+        margin-top: -10px;
+    }
+
+    .dark .nav-link {
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .button-text {
+        display: none;
+    }
+}

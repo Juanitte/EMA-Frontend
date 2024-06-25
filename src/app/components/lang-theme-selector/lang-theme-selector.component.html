@@ -1,0 +1,32 @@
+<div [ngClass]="isLightMode ? 'd-flex justify-content-end light' : 'd-flex justify-content-end dark'">
+    <div class="btn-group mode-group" role="group" aria-label="Basic radio toggle button group">
+        @if(isLightMode) {
+            <input type="radio" class="btn-check" name="mode" id="lightMode" autocomplete="off" (click)="setLightMode()" checked>
+        } @else {
+            <input type="radio" class="btn-check" name="mode" id="lightMode" autocomplete="off" (click)="setLightMode()">
+        }
+        <label class="btn btn-outline-primary custom-btn" for="lightMode"><i class="fa-solid fa-sun"></i></label>
+
+        @if (isLightMode) {
+            <input type="radio" class="btn-check" name="mode" id="darkMode" autocomplete="off" (click)="setDarkMode()">
+        } @else {
+            <input type="radio" class="btn-check" name="mode" id="darkMode" autocomplete="off" (click)="setDarkMode()" checked>            
+        }
+        <label class="btn btn-outline-primary custom-btn" for="darkMode"><i class="fa-solid fa-moon"></i></label>
+    </div>
+    <div class="btn-group language-group" role="group" aria-label="Basic radio toggle button group">
+        @if (language == 'es') {
+            <input type="radio" class="btn-check" name="language" id="spanish" autocomplete="off" (click)="setSpanish()" checked>
+        } @else {
+            <input type="radio" class="btn-check" name="language" id="spanish" autocomplete="off" (click)="setSpanish()">
+        }
+        <label class="btn btn-outline-primary custom-btn" for="spanish"><img src="images/spain.png"/></label>
+        
+        @if (language == 'en') {
+            <input type="radio" class="btn-check" name="language" id="english" autocomplete="off" (click)="setEnglish()" checked>
+        } @else {
+            <input type="radio" class="btn-check" name="language" id="english" autocomplete="off" (click)="setEnglish()">
+        }
+        <label class="btn btn-outline-primary custom-btn" for="english"><img src="images/uk.png"/></label>
+    </div>
+</div>

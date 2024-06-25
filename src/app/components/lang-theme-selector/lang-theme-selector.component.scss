@@ -1,0 +1,70 @@
+@import '../../../styles/variables.scss';
+
+img {
+    width: 20px;
+    margin-top: -2px;
+}
+
+.btn-group {
+    padding: 10px;
+}
+
+.light {
+    background-color: $bg-color-light;
+}
+
+.dark {
+    background-color: $bg-color-darker;
+}
+
+.light .custom-btn {
+    border-color: $border-color-light;
+    color: $border-color-light;
+}
+
+.dark .custom-btn {
+    border-color: $border-color-dark;
+    color: $border-color-dark;
+}
+
+.light .custom-btn:hover {
+    background-color: $button-hover-color-light;
+}
+
+.dark .custom-btn:hover {
+    background-color: $button-hover-color-dark;
+}
+
+.light .custom-btn:active {
+    background-color: $border-color-light;
+    border-color: $border-color-light;
+}
+
+.dark .custom-btn:active {
+    background-color: $border-color-dark;
+    border-color: $border-color-dark;
+}
+
+.light input[type="radio"].btn-check:focus + .custom-btn {
+    background-color: $border-color-light;
+    border-color: $border-color-light;
+    box-shadow: none;
+}
+
+.dark input[type="radio"].btn-check:focus + .custom-btn {
+    background-color: $border-color-dark;
+    border-color: $border-color-dark;
+    box-shadow: none;
+}
+
+.light input[type="radio"].btn-check:checked + .custom-btn {
+    background-color: $border-color-light;
+    border-color: $border-color-light;
+    color: $text-color-dark;
+}
+
+.dark input[type="radio"].btn-check:checked + .custom-btn {
+    background-color: $border-color-dark;
+    border-color: $border-color-dark;
+    color: $text-color-dark;
+}

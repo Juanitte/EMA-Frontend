@@ -1,0 +1,33 @@
+<div [ngClass]="isLightMode ? 'light' : 'dark'">
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand">
+            <img src="Isotipo_completo.png">
+        </a>
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page"><i class="fa-solid fa-house"></i><span class="button-text"> {{ "NAVBAR.HOME" | translate }}</span></a>
+            </li>
+            <li>
+                <a class="nav-link"><i class="fa-solid fa-briefcase"></i><span class="button-text"> {{ "NAVBAR.COMPANY" | translate }}</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"><i class="fa-solid fa-user"></i><span class="button-text"> {{ "NAVBAR.PROFILE" | translate }}</span></a>
+            </li>
+            <!--<li>
+                <a class="nav-link" (click)="toggleMode()">
+                    @if (isLightMode) {
+                        <i class="fa-solid fa-sun"></i><span class="button-text"> {{ "NAVBAR.LIGHT_MODE" | translate }}</span>
+                    } @else {
+                        <i class="fa-solid fa-moon"></i><span class="button-text"> {{ "NAVBAR.DARK_MODE" | translate }}</span>
+                    }
+                </a>
+            </li>-->
+            <li>
+                <a class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket"></i><span class="button-text"> {{ "NAVBAR.LOGOUT" | translate }}</span>
+                </a>
+            </li>
+        </ul>
+        <app-lang-theme-selector></app-lang-theme-selector>
+    </nav>
+</div>

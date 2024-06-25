@@ -1,0 +1,23 @@
+<div [ngClass]="isLightMode ? 'light' : 'dark'">
+    <div class="custom-container">
+        <h2>{{'LOGIN.TITLE' | translate}}</h2>
+        <form class="login-form">
+            <div class="mb-3">
+                <label for="email" class="form-label"><i class="fa-solid fa-at"></i> {{'LOGIN.EMAIL' | translate}}</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label"><i class="fa-solid fa-key"></i> {{'LOGIN.PASSWORD' | translate}}</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <a href="#">{{'LOGIN.FORGOT_PASSWORD' | translate}}</a>
+            <div class="mb-3 button-container">
+                <button type="submit" class="btn btn-primary">{{'LOGIN.LOG_IN' | translate}}</button>
+                <button class="btn btn-secondary" (click)="goToSignUp()">{{'LOGIN.SIGN_UP' | translate}}</button>
+            </div>
+            <div class="mb-3">
+                <img src="Isotipo_completo.png"/>
+            </div>
+        </form>
+    </div>
+</div>
