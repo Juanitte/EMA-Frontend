@@ -1,5 +1,5 @@
 <div [ngClass]="isLightMode ? 'd-flex justify-content-end light' : 'd-flex justify-content-end dark'">
-    <div class="btn-group mode-group" role="group" aria-label="Basic radio toggle button group">
+    <div class="btn-group mode-group" role="group" aria-label="Basic radio toggle button group" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{'LANG_THEME.THEME' | translate }}">
         @if(isLightMode) {
             <input type="radio" class="btn-check" name="mode" id="lightMode" autocomplete="off" (click)="setLightMode()" checked>
         } @else {
@@ -14,7 +14,7 @@
         }
         <label class="btn btn-outline-primary custom-btn" for="darkMode"><i class="fa-solid fa-moon"></i></label>
     </div>
-    <div class="btn-group language-group" role="group" aria-label="Basic radio toggle button group">
+    <div class="btn-group language-group" role="group" aria-label="Basic radio toggle button group" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{'LANG_THEME.LANG' | translate }}">
         @if (language == 'es') {
             <input type="radio" class="btn-check" name="language" id="spanish" autocomplete="off" (click)="setSpanish()" checked>
         } @else {
