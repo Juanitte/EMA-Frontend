@@ -14,7 +14,8 @@
         "PASSWORD": "Contraseña",
         "LOG_IN": "Iniciar sesión",
         "SIGN_UP": "Registrarse",
-        "FORGOT_PASSWORD": "Olvidé mi contraseña"
+        "FORGOT_PASSWORD": "Olvidé mi contraseña",
+        "SUBSCRIBE": "¿Sin acceso? ¡Subscríbete aquí!"
     },
     
     "NAVBAR": {

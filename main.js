@@ -10,7 +10,9 @@ const createWindow = () => {
     height: 600,
     icon: path.join(__dirname, '/src/assets/Isotipo_icon.ico'),
     webPreferences: {
-      nodeIntegration:true
+      nodeIntegration: true,
+      contextIsolation: false,
+      enableRemoteModule: true,
     }
   });
 
