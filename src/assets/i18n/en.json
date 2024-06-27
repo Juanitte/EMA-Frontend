@@ -1,4 +1,13 @@
 {
+    "LANG_THEME": {
+        "THEME": "Theme",
+        "LANG": "Language"
+    },
+
+    "BUTTON": {
+        "BACK": "Back"
+    },
+
     "LOGIN": {
         "TITLE": "Log in",
         "EMAIL": "Email",

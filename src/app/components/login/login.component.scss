@@ -20,6 +20,7 @@
 
 h2 {
     margin-bottom: 60px;
+    font-size: 40px;
 }
 
 img {
@@ -128,6 +129,16 @@ input {
     img {
         width: 12vw;
     }
+
+    .light .custom-container {
+        margin: 13vh 0;
+        padding: 60px;
+    }
+
+    .dark .custom-container {
+        margin: 13vh 0;
+        padding: 60px;
+    }
 }
 
 @media screen and (max-width: 1080px) {
@@ -142,6 +153,16 @@ input {
 
     img {
         width: 15vw;
+    }
+
+    .light .custom-container {
+        margin: 13vh 0;
+        padding: 60px;
+    }
+
+    .dark .custom-container {
+        margin: 13vh 0;
+        padding: 60px;
     }
 }
 
@@ -158,35 +179,65 @@ input {
     img {
         width: 18vw;
     }
+
+    .light .custom-container {
+        margin: 8vh 0;
+        padding: 50px;
+    }
+
+    .dark .custom-container {
+        margin: 8vh 0;
+        padding: 50px;
+    }
 }
 
 @media screen and (max-width: 720px) {
 
     .light .custom-container {
-        width: 70vw;
+        width: 80vw;
     }
 
     .dark .custom-container {
-        width: 70vw;
+        width: 80vw;
     }
 
     img {
         width: 20vw;
     }
-}
-
-@media screen and (max-width: 550px) {
 
     .light .custom-container {
-        width: 85vw;
+        margin: 5vh 0;
+        padding: 40px;
     }
 
     .dark .custom-container {
-        width: 85vw;
+        margin: 5vh 0;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .light .custom-container {
+        width: 90vw;
+    }
+
+    .dark .custom-container {
+        width: 90vw;
     }
 
     img {
         width: 25vw;
+    }
+
+    .light .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
+
+    .dark .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
     }
 }
 
@@ -203,6 +254,20 @@ input {
     img {
         width: 25vw;
     }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .light .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
+
+    .dark .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -214,5 +279,19 @@ input {
 
     img {
         width: 30vw;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .light .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
+
+    .dark .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
     }
 }

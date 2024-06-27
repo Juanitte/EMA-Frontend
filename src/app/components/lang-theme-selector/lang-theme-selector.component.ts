@@ -2,11 +2,12 @@ import { NgClass } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { AppDataService } from '../../services/app-data.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-lang-theme-selector',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, TranslateModule],
   templateUrl: './lang-theme-selector.component.html',
   styleUrl: './lang-theme-selector.component.scss'
 })
