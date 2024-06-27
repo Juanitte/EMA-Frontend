@@ -14,7 +14,8 @@
         "PASSWORD": "Password",
         "LOG_IN": "Log in",
         "SIGN_UP": "Sign up",
-        "FORGOT_PASSWORD": "Forgot password"
+        "FORGOT_PASSWORD": "Forgot password",
+        "SUBSCRIBE": "No access? Subscribe here!"
     },
 
     "NAVBAR": {

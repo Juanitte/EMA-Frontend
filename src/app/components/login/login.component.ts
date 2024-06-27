@@ -4,6 +4,7 @@ import { AppDataService } from '../../services/app-data.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ElectronService } from '../../services/electron.service';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,7 @@ export class LoginComponent implements OnInit , OnDestroy {
   modeUpdateSubscription: Subscription = Subscription.EMPTY;
 
   constructor(private appData: AppDataService, private router: Router,
-              private translate: TranslateService) { }
+              private translate: TranslateService, private electronService: ElectronService) { }
 
   /**
    * Called when the component is initialized.
@@ -66,6 +67,16 @@ export class LoginComponent implements OnInit , OnDestroy {
    */
   goToSignUp() {
     this.router.navigate(['/signup']);
+  }
+
+  /**
+   * Opens a web page in the default browser.
+   * @param url the url to open.
+   */
+  goToWeb(url: string) {
+    if(!this.electronService.openExternal(url)){
+      window.open(url, '_blank');
+    }
   }
 
 }
