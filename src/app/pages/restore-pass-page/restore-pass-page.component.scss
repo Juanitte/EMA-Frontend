@@ -7,16 +7,22 @@
     padding: 10px;
 }
 
+a {
+    margin-left: 10px;
+}
+
 .lang-theme {
     width: 100%;
 }
 
 .light {
     background-color: $bg-color-light;
+    height: 100%;
 }
 
 .dark {
     background-color: $bg-color-darker;
+    height: 100%;
 }
 
 .light .btn-primary {

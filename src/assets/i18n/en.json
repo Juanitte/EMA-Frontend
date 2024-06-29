@@ -13,9 +13,14 @@
         "EMAIL": "Email",
         "PASSWORD": "Password",
         "LOG_IN": "Log in",
-        "SIGN_UP": "Sign up",
         "FORGOT_PASSWORD": "Forgot password",
         "SUBSCRIBE": "No access? Subscribe here!"
+    },
+
+    "RESTORE_PASS": {
+        "TITLE": "Restore password",
+        "EMAIL": "Email",
+        "RESTORE": "Restore password"
     },
 
     "NAVBAR": {

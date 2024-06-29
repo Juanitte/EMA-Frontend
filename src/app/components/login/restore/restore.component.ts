@@ -1,26 +1,26 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { LangThemeSelectorComponent } from '../../components/lang-theme-selector/lang-theme-selector.component';
 import { NgClass } from '@angular/common';
-import { Subscription } from 'rxjs';
-import { AppDataService } from '../../services/app-data.service';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { AppDataService } from '../../../services/app-data.service';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ElectronService } from '../../../services/electron.service';
 
 @Component({
-  selector: 'app-signup-page',
+  selector: 'app-restore',
   standalone: true,
-  imports: [LangThemeSelectorComponent, NgClass, TranslateModule],
-  templateUrl: './signup-page.component.html',
-  styleUrl: './signup-page.component.scss'
+  imports: [NgClass, TranslateModule],
+  templateUrl: './restore.component.html',
+  styleUrl: './restore.component.scss'
 })
-export class SignupPageComponent implements OnInit, OnDestroy {
+export class RestoreComponent implements OnInit , OnDestroy {
 
-  isLightMode: boolean = true
+  isLightMode: boolean = true;
 
-  modeUpdateSubscription: Subscription = Subscription.EMPTY
-  
+  modeUpdateSubscription: Subscription = Subscription.EMPTY;
+
   constructor(private appData: AppDataService, private router: Router,
-              private translate: TranslateService) { }
+              private translate: TranslateService, private electronService: ElectronService) { }
 
   /**
    * Called when the component is initialized.
@@ -60,12 +60,5 @@ export class SignupPageComponent implements OnInit, OnDestroy {
    */
   ngOnDestroy(): void {
     this.modeUpdateSubscription.unsubscribe();
-  }
-
-  /**
-   * Navigates to the login page.
-   */
-  goBack() {
-    this.router.navigate(['/login']);
   }
 }

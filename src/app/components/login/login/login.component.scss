@@ -1,0 +1,305 @@
+@import '../../../../styles/variables.scss';
+
+.light {
+    background-color: $bg-color-light;
+    color: $border-color-light;
+    display: flex;
+    justify-content: center;
+}
+
+.dark {
+    background-color: $bg-color-darker;
+    color: $border-color-dark;
+    display: flex;
+    justify-content: center;
+}
+
+.dark h2 {
+    color: $text-color-dark;
+}
+
+h2 {
+    margin-bottom: 60px;
+    font-size: 40px;
+    cursor: default;
+}
+
+img {
+    width: 8vw;
+    margin-top: 30px;
+}
+
+input {
+    margin-bottom: 30px;
+}
+
+.links {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.light .custom-container {
+    width: 30vw;
+    border: 2px solid $border-color-light;
+    border-radius: 14px;
+    padding: 60px;
+    text-align: center;
+    margin: 20vh 0;
+}
+
+.dark .custom-container {
+    width: 30vw;
+    border: 2px solid $border-color-dark;
+    border-radius: 14px;
+    padding: 60px;
+    text-align: center;
+    margin: 20vh 0;
+    background-color: $bg-color-dark;
+}
+
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.light .custom-container a {
+    color: $border-color-light;
+}
+
+.dark .custom-container a {
+    color: $border-color-dark;
+}
+
+.light .custom-container input {
+    background-color: $bg-color-light;
+    border-color: $border-color-light;
+    color: $text-color-light;
+
+    &:focus {
+        box-shadow: 0 0 2px 2px $border-color-light;   
+    }
+}
+
+.dark .custom-container input {
+    background-color: $bg-color-secondary;
+    border-color: $border-color-dark;
+    color: $text-color-dark;
+
+    &:focus {
+        box-shadow: 0 0 2px 2px $border-color-dark;   
+    }
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.light .custom-container .btn-primary {
+    background-color: $border-color-light;
+    border-color: $border-color-light;
+
+    &:hover {
+        background-color: $button-hover-color-light;
+        border-color: $button-hover-color-light;
+        color: $border-color-light;
+    }
+}
+
+.dark .custom-container .btn-primary {
+    background-color: $border-color-dark;
+    border-color: $border-color-dark;
+
+    &:hover {
+        background-color: $button-hover-color-dark;
+        border-color: $button-hover-color-dark;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .light .custom-container {
+        width: 50vw;
+    }
+
+    .dark .custom-container {
+        width: 50vw;
+    }
+
+    img {
+        width: 12vw;
+    }
+
+    .light .custom-container {
+        margin: 13vh 0;
+        padding: 60px;
+    }
+
+    .dark .custom-container {
+        margin: 13vh 0;
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .light .custom-container {
+        width: 60vw;
+    }
+
+    .dark .custom-container {
+        width: 60vw;
+    }
+
+    img {
+        width: 15vw;
+    }
+
+    .light .custom-container {
+        margin: 13vh 0;
+        padding: 60px;
+    }
+
+    .dark .custom-container {
+        margin: 13vh 0;
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .light .custom-container {
+        width: 70vw;
+    }
+
+    .dark .custom-container {
+        width: 70vw;
+    }
+
+    img {
+        width: 18vw;
+    }
+
+    .light .custom-container {
+        margin: 8vh 0;
+        padding: 50px;
+    }
+
+    .dark .custom-container {
+        margin: 8vh 0;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .light .custom-container {
+        width: 80vw;
+    }
+
+    .dark .custom-container {
+        width: 80vw;
+    }
+
+    img {
+        width: 20vw;
+    }
+
+    .light .custom-container {
+        margin: 5vh 0;
+        padding: 40px;
+    }
+
+    .dark .custom-container {
+        margin: 5vh 0;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .light .custom-container {
+        width: 90vw;
+    }
+
+    .dark .custom-container {
+        width: 90vw;
+    }
+
+    img {
+        width: 25vw;
+    }
+
+    .light .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
+
+    .dark .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .light .custom-container {
+        width: 95vw;
+    }
+
+    .dark .custom-container {
+        width: 95vw;
+    }
+
+    img {
+        width: 25vw;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .light .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
+
+    .dark .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .button-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    img {
+        width: 30vw;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .light .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
+
+    .dark .custom-container {
+        margin: 2vh 0;
+        padding: 30px;
+    }
+}

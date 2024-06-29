@@ -1,10 +1,10 @@
 import { NgClass } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { AppDataService } from '../../services/app-data.service';
+import { AppDataService } from '../../../services/app-data.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { ElectronService } from '../../services/electron.service';
+import { ElectronService } from '../../../services/electron.service';
 
 @Component({
   selector: 'app-login',
@@ -65,8 +65,8 @@ export class LoginComponent implements OnInit , OnDestroy {
   /**
    * Navigates to the signup page.
    */
-  goToSignUp() {
-    this.router.navigate(['/signup']);
+  goToRestore() {
+    this.router.navigate(['/restore']);
   }
 
   /**

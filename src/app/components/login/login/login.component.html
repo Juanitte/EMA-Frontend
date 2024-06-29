@@ -10,12 +10,13 @@
                 <label for="password" class="form-label"><i class="fa-solid fa-key"></i> {{'LOGIN.PASSWORD' | translate}}</label>
                 <input type="password" class="form-control" id="password">
             </div>
-            <a href="#">{{'LOGIN.FORGOT_PASSWORD' | translate}}</a>
+            <div class="links-container">
+                <a class="links" (click)="goToRestore()">{{'LOGIN.FORGOT_PASSWORD' | translate}}</a>
+                <a class="links" (click)="goToWeb('https://angular.dev/')">{{'LOGIN.SUBSCRIBE' | translate}}</a>
+            </div>
             <div class="mb-3 button-container">
                 <button type="submit" class="btn btn-primary">{{'LOGIN.LOG_IN' | translate}}</button>
-                <button class="btn btn-secondary" (click)="goToSignUp()">{{'LOGIN.SIGN_UP' | translate}}</button>
             </div>
-            <a (click)="goToWeb('https://angular.dev/')" id="subscribe">{{'LOGIN.SUBSCRIBE' | translate}}</a>
             <div class="mb-3">
                 <img src="Isotipo_completo.png"/>
             </div>

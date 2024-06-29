@@ -1,7 +1,7 @@
-<div [ngClass]="isLightMode ? 'custom-container light' : 'custom-container dark'">
+<div [ngClass]="isLightMode ? 'light' : 'dark'">
     <div class="custom-container">
         <a name="back" class="btn btn-primary" role="button" (click)="goBack()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{'BUTTON.BACK' | translate }}"><i class="fa-solid fa-chevron-left"></i></a>
         <app-lang-theme-selector class="lang-theme"></app-lang-theme-selector>
     </div>
-    
+    <app-restore></app-restore>
 </div>

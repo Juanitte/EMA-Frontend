@@ -1,4 +1,4 @@
-@import '../../../styles/variables.scss';
+@import '../../../../styles/variables.scss';
 
 .light {
     background-color: $bg-color-light;
@@ -21,6 +21,7 @@
 h2 {
     margin-bottom: 60px;
     font-size: 40px;
+    cursor: default;
 }
 
 img {
@@ -30,12 +31,6 @@ img {
 
 input {
     margin-bottom: 30px;
-}
-
-#subscribe {
-    font-size: 18px;
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 .light .custom-container {
@@ -65,14 +60,6 @@ input {
     justify-content: center;
 }
 
-.light .custom-container a {
-    color: $border-color-light;
-}
-
-.dark .custom-container a {
-    color: $border-color-dark;
-}
-
 .light .custom-container input {
     background-color: $bg-color-light;
     border-color: $border-color-light;
@@ -94,10 +81,6 @@ input {
 }
 
 .btn-primary {
-    width: 100%;
-}
-
-.btn-secondary {
     width: 100%;
 }
 

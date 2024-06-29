@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import {NgClass} from '@angular/common';
-import { AppDataService } from '../../services/app-data.service';
+import { AppDataService } from '../../../services/app-data.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
