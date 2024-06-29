@@ -1,0 +1,17 @@
+<div [ngClass]="isLightMode ? 'light' : 'dark'">
+    <div class="custom-container">
+        <h2>{{'RESTORE_PASS.TITLE' | translate}}</h2>
+        <form class="login-form">
+            <div class="mb-3">
+                <label for="email" class="form-label"><i class="fa-solid fa-at"></i> {{'RESTORE_PASS.EMAIL' | translate}}</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 button-container">
+                <button type="submit" class="btn btn-primary">{{'RESTORE_PASS.RESTORE' | translate}}</button>
+            </div>
+            <div class="mb-3">
+                <img src="Isotipo_completo.png"/>
+            </div>
+        </form>
+    </div>
+</div>

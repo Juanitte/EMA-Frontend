@@ -1,7 +1,7 @@
 import { NgClass } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { AppDataService } from '../../services/app-data.service';
+import { AppDataService } from '../../../services/app-data.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({

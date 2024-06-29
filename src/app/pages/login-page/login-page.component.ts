@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { LoginComponent } from '../../components/login/login.component';
-import { LangThemeSelectorComponent } from '../../components/lang-theme-selector/lang-theme-selector.component';
+import { LoginComponent } from '../../components/login/login/login.component';
+import { LangThemeSelectorComponent } from '../../components/shared/lang-theme-selector/lang-theme-selector.component';
 import { NgClass } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { AppDataService } from '../../services/app-data.service';
