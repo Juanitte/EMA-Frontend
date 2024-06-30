@@ -2,13 +2,34 @@
     <div class="custom-container">
         <h2>{{'RESTORE_PASS.TITLE' | translate}}</h2>
         <form class="login-form">
-            <div class="mb-3">
-                <label for="email" class="form-label"><i class="fa-solid fa-at"></i> {{'RESTORE_PASS.EMAIL' | translate}}</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3 button-container">
-                <button type="submit" class="btn btn-primary">{{'RESTORE_PASS.RESTORE' | translate}}</button>
-            </div>
+            @if (!isFinalStep && !isSecondStep) {
+                <div class="mb-3">
+                    <label for="email" class="form-label"><i class="fa-solid fa-at"></i> {{'RESTORE_PASS.EMAIL' | translate}}</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 button-container">
+                    <button type="button" class="btn btn-primary" (click)="goToSecondStep()">{{'RESTORE_PASS.RESTORE' | translate}}</button>
+                </div>
+            } @else if (isSecondStep && !isFinalStep) {
+                <div class="mb-3">
+                    <label for="code" class="form-label"><i class="fa-solid fa-hashtag"></i> {{'RESTORE_PASS.CODE' | translate}}</label>
+                    <input type="text" class="form-control" id="code">
+                    <p>{{'RESTORE_PASS.HINT' | translate}}</p>
+                </div>
+                <div class="mb-3 button-container">
+                    <button type="button" class="btn btn-primary" (click)="goToFinalStep()">{{'RESTORE_PASS.SUBMIT' | translate}}</button>
+                </div>
+            } @else if (isFinalStep && !isSecondStep) {
+                <div class="mb-3">
+                    <label for="pass" class="form-label"><i class="fa-solid fa-key"></i> {{'RESTORE_PASS.PASSWORD' | translate}}</label>
+                    <input type="password" class="form-control" id="pass">
+                    <label for="pass" class="form-label"><i class="fa-solid fa-key"></i> {{'RESTORE_PASS.CONFIRM_PASSWORD' | translate}}</label>
+                    <input type="password" class="form-control" id="rePass">
+                </div>
+                <div class="mb-3 button-container">
+                    <button type="button" class="btn btn-primary" (click)="restorePassword()">{{'RESTORE_PASS.RESTORE' | translate}}</button>
+                </div>
+            }
             <div class="mb-3">
                 <img src="Isotipo_completo.png"/>
             </div>

@@ -20,7 +20,13 @@
     "RESTORE_PASS": {
         "TITLE": "Restore password",
         "EMAIL": "Email",
-        "RESTORE": "Restore password"
+        "RESTORE": "Restore password",
+        "CODE": "Code",
+        "HINT": "Enter the code sent to your email.",
+        "SUBMIT": "Submit",
+        "RESEND": "Resend code",
+        "PASSWORD": "New password",
+        "CONFIRM_PASSWORD": "Confirm password"
     },
 
     "NAVBAR": {

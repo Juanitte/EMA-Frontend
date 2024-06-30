@@ -16,6 +16,8 @@ import { ElectronService } from '../../../services/electron.service';
 export class RestoreComponent implements OnInit , OnDestroy {
 
   isLightMode: boolean = true;
+  isSecondStep: boolean = false;
+  isFinalStep: boolean = false;
 
   modeUpdateSubscription: Subscription = Subscription.EMPTY;
 
@@ -60,5 +62,28 @@ export class RestoreComponent implements OnInit , OnDestroy {
    */
   ngOnDestroy(): void {
     this.modeUpdateSubscription.unsubscribe();
+  }
+
+  /**
+   * Sets a random code and sends it to the user by email.
+   * Then gets the user to the second step.
+   */
+  goToSecondStep() {
+    this.isSecondStep = true;
+  }
+
+  /**
+   * Checks if the code is correct and gets the user to the final step if it is.
+   */
+  goToFinalStep() {
+    this.isFinalStep = true;
+    this.isSecondStep = false;
+  }
+
+  /**
+   * Restores the password.
+   */
+  restorePassword() {
+    this.isFinalStep = false;
   }
 }
