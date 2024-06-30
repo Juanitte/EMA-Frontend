@@ -20,7 +20,13 @@
     "RESTORE_PASS": {
         "TITLE": "Restablecer contraseña",
         "EMAIL": "Email",
-        "RESTORE": "Restablecer contraseña"
+        "RESTORE": "Restablecer contraseña",
+        "CODE": "Código",
+        "HINT": "Introduzca el código que se le ha enviado por email.",
+        "SUBMIT": "Enviar",
+        "RESEND": "Reenviar código",
+        "PASSWORD": "Nueva contraseña",
+        "CONFIRM_PASSWORD": "Confirmar contraseña"
     },
     
     "NAVBAR": {
